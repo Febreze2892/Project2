@@ -16,13 +16,13 @@ Role Screen:
 -will have 3 buttons
 -Barbarian
 	-200 health, 150 stamina
-	-starts with a long sword, a dagger, 20 food, 250 currency
+	-starts with a long sword, a dagger, 25 food, 250 currency, iron armor
 -Mage
 	-200 health, 200 stamina
-	-starts with 10 health potions, a dagger, 15 food, 300 currency
+	-starts with 10 health potions, a dagger, 15 food, 300 currency, leather armor
 -Thief
 	-100 health, 250 stamina
-	-starts with a dagger, 35 food, 400 currency
+	-starts with a dagger, 35 food, 400 currency, leather armor
 
 Main Game Screen:
 -inventory button
