@@ -1,0 +1,179 @@
+Project Manager = Alessa
+
+Dungeons and Dragons Overview
+Text based story with GUI that will have multiple buttons and screens. 
+The player will be able to create their own character. 
+We will need a random number and action(such as amount of damage you do/healing, amount of stamina you use/gain. 
+Some items will give you a set amount of a certain thing) generator. Have a form of currency such as gold. 
+The player will be able to level up, the enemies will be the same level as the player as the quest progresses.
+
+
+Play Screen:
+-play button
+-title of the game which is Dungeons and Dragons
+
+Role Screen:
+-will have 3 buttons
+-Barbarian
+	-200 health, 150 stamina
+	-starts with a long sword, a dagger, 20 food, 250 currency
+-Mage
+	-200 health, 200 stamina
+	-starts with 10 health potions, a dagger, 15 food, 300 currency
+-Thief
+	-100 health, 250 stamina
+	-starts with a dagger, 35 food, 400 currency
+
+Main Game Screen:
+-inventory button
+-store button
+-fight button
+-extra actions button(whoever is in charge of GUI Screens can name this button)
+-text box to input player choices given by the game
+-rest button(uses up one turn to regain stamina)
+	-rest button will give each role 30 stamina, turn then goes to the opponent.
+	-also can be used when not fighting an opponent. (no penalty for using it too much)
+-shows amount of health you have
+-shows amount of stamina you have
+-amount of currency
+
+
+Extra Actions Screen:
+-find a treasure chest button
+	-will allow the player to find a chest(will use a generator because player can not find a chest every single time this button is clicked)
+	-the chest may contain up to 20-50 currency
+	-the chest may contain weapons such as a small dagger or pocket knife
+	-the chest may contain small health and stamina potions
+-steal food from opponent
+	-successfulness depends on what role you are if you are a thief, you will be able to steal 100% percent of the time, barbarian: 40%, mage: 70%
+
+Inventory Screen:
+-will have a list of everything you have( potions, food, equipment)
+-equipment that is equipped should have something that tells the player that it is equipped.
+-will have the pixelated image and name of the object
+-potions and food should have these buttons
+-use
+-sell
+-equipment should have these buttons(tools, armor, weapons)
+	-equip
+	-sell
+
+Store Screen:
+-list food in one column
+	-will have the pixelated image of it and name of it
+	-will have a buy button
+	-will have the amount of currency to buy
+-list potions in column next to food
+	-will have the pixelated image of it and name of it
+	-will have a buy button
+	-will have the amount of currency to buy
+-list armor in column next to potions
+	-will have the pixelated image of it and name of it
+	-will have a buy button 
+	-will have the amount of currency to buy
+-list tools and weapons in column next to armor
+	-will have the pixelated image of it and name of it
+	-will have a buy button
+	-will have the amount of currency to buy
+
+Costs:
+
+Weapons: 
+-longsword: 20 gold coins
+-dagger: 15 gold coins
+-pocketknife: 10 gold coins
+
+
+Food: 
+-cooked chicken: 20 gold coins:
+-bread: 5 gold coins
+-cookie: 10 gold coins:
+-muffin: 10 gold coins
+-pickle: 4 gold coins
+
+Armor:
+-iron set of armor: 20 gold coins
+-gold set of armor: 30 gold coins
+-leather set of armor: 5 gold coins
+
+Potions:
+Health potion: 25 gold coins
+Stamina potion: 25 gold coins
+Damage potion: 30 gold coins
+
+Photoshop:
+-everything will just be pixelated so you can just search up stuff like “pixelated gold coin, pixelated long sword…” 
+
+Weapons: 
+-longsword 
+-dagger
+-pocket knife
+-bow and arrows
+
+Food: 
+-cooked chicken
+-bread
+-cookie
+-muffin
+-pickle
+
+Armor:
+-iron set of armor
+-gold set of armor
+-leather set of armor
+
+Potions:
+For the health potion find a red pixelated potion
+For the stamina potion find a blue pixelated potion
+For the damage potion find a purple pixelated potion
+Currency:
+-gold coin
+
+
+
+
+Enemies:
+-devil
+-lich
+-dragon
+
+Damage/Heals:
+
+Weapons:
+-longsword will deal 30 dmg
+-dagger will deal 20 dmg
+-pocketknife will deal 15 dmg
+
+Food:
+-Cooked chicken will heal 50 health
+-Cookies will heal 30 health
+-Muffins will heal 30 health
+-Bread will heal 20 health
+-Pickles will heal 15 health
+
+Potions:
+-health potions will heal 80 health
+-damage potions will deal 70 damage
+-stamina potions will give the player 50 stamina
+
+Armor:
+-leather armor will boost your hp by 30 points
+-iron armor will boost your hp by 50 points
+-gold armor will boost your hp by 70 points
+
+Enemies:
+-devil will deal 40 damage each turn, player level goes up 4
+-lich will deal 25 damage each turn, player level goes up 2
+-dragon will deal 30 damage each turn, player level goes up 3
+
+Currency:
+Currency can be earned through killing enemies, looting treasure chests and selling your items in inventory. The currency will just be gold coins.
+
+End Screen:
+-if the player dies a game over screen will appear
+-if the player finishes the quest a game won screen will appear
+
+
+REMINDERS:
+-GUI coders please do play screen last, same with end screen
+-Communication is key, like Lavaris said we will have a 5-10 minute meeting everyday before we start working again. 
