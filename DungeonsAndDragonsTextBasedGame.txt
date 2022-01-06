@@ -85,7 +85,7 @@ Weapons:
 
 
 Food: 
--cooked chicken: 20 gold coins:
+-cooked chicken: 20 gold coins
 -bread: 5 gold coins
 -cookie: 10 gold coins:
 -muffin: 10 gold coins
@@ -168,6 +168,10 @@ Enemies:
 
 Currency:
 Currency can be earned through killing enemies, looting treasure chests and selling your items in inventory. The currency will just be gold coins.
+
+Selling Items:
+-selling an item will give the player the same amount they bought it for.
+
 
 End Screen:
 -if the player dies a game over screen will appear
