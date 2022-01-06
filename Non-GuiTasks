@@ -1,0 +1,62 @@
+Project Manager: Alessa
+
+Play Screen:
+This screen will have one button, it will be titled “Play” and a label that displays the name of the game. 
+	-the function of this button will be to move to the next screen, which is the role choosing screen.
+
+Role Screen:
+
+This screen will have 3 buttons
+	-Barbarian
+		-200 health, 150 stamina
+		-starts with a long sword, a dagger, 25 food, 250 currency, iron armor, 5 health potions, 20 damage potions 
+	-Mage 
+		-200 health, 200 stamina
+		-starts with 10 health potions, 10 damage potions, a dagger, 15 food, 300 currency, leather armor
+		
+	-Thief
+		-200 health, 200 stamina
+		-starts with 1 health potion, a dagger, 15 food, 300 currency, leather armor
+
+Once one of these buttons are clicked, the player will be given role attributes and taken to the main screen. 
+
+Main Screen: 
+This screen will have 5 buttons, 3 of these buttons will lead to another screen. There will be a textbox for the player to input their choice. This screen will have 3 labels
+
+The 5 buttons will be labeled: “Rest”, “Shop”, “Actions,” “Inventory”,”Fight”
+
+The rest button will give the player 30 stamina.
+
+The shop button will let the player buy things from the shop screen
+
+The actions button will allow the player to see if there are any other options they can choose besides the ones given by the story. (will open up another screen)
+
+The fight button will generate a random enemy for the player to fight.
+
+The textbox is strictly for the choices the text-based game gives the player. The player can not execute any functions from the Actions Screen using the textbox
+
+The 3 labels will tell the player the amount of money, health, and stamina the player has. 
+
+
+Store Screen: 
+This screen will have a total of 14 buttons. 
+
+All buttons on this screen will be labeled buy. Each specific button will take away a certain amount of gold coins away from the player
+
+
+CHECK DUNGEONS AND DRAGONS TEXT BASED GAME DOC TO SEE GOLD AMOUNTS FOR EACH ITEM.
+
+
+Actions Screen:
+This screen will only have two buttons for now. 
+
+The find tresure chest button will allow the player to find a tresure chest(not all the time, so please add a random generator). 
+Whenever a player finds a chest, the chest will give them 20-50 gold coins. Some other possible items can be a dagger, a pocketknife, a health potion, and a stamina potion.
+
+The other button will be a steal button. This allows the player to steal food from the opponent. The player's successfulness depends on their role. 
+A thief will be successful 100% of the time, a barbarian will be successful 40% of the time, and a mage will be sucessfull 70% of the time
+
+REMINDERS:
+-you can see the prices for the shop in the dungeons and dragons text based game document
+-you can see the GUI layout in the GUI Screens folder
+-please communicate with the GUI coders 
