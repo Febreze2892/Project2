@@ -5,10 +5,14 @@ import javax.swing.*;
 import java.awt.*;
 
 public class MainScreen {
-    public MainScreen(){
-        JFrame MainS = new JFrame("Example");
-        MainS.setSize(800,600);
-    } 
+    JFrame MS;
+    MainScreen(){
+        MS = new JFrame();
+        MS.setSize(600,800);
+        MS.setVisible(true);
+
+    }
+    // main for testing purposes
     public static void main(String[] args) {
         new MainScreen();
     }
