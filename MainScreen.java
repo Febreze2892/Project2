@@ -8,8 +8,10 @@ public class MainScreen {
     JFrame MS;
     MainScreen(){
         MS = new JFrame();
-        MS.setSize(600,800);
+        MS.setSize(800,600);
+        MS.setLayout(null);
         MS.setVisible(true);
+        MS.setResizable(false);
 
     }
     // main for testing purposes
