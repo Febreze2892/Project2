@@ -1,4 +1,4 @@
-//Programmers: Luke and lukas
+//Programmers: Lukas
 //purpose: main player screen
 
 import javax.swing.*;
@@ -15,6 +15,9 @@ public class MainScreen {
     JButton Ent;
 
     MainScreen(){
+
+        Icon Enter = new ImageIcon("enter.png");
+
         MS = new JFrame();
         MS.setSize(800,600);
         MS.setLayout(null);
@@ -46,7 +49,7 @@ public class MainScreen {
         Text.setBounds(160, 430, 400,50);
         MS.add(Text);
 
-        Ent = new JButton("");
+        Ent = new JButton(Enter);
         Ent.setBounds(570, 430, 50, 50);
         MS.add(Ent);
     
