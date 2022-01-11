@@ -9,7 +9,7 @@ public class playScreen {
         JFrame playScreen = new JFrame(); // creates frame
         playScreen.setTitle("Dungeons and Dragons");// gives GUI title
         playScreen.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //allows us to close out of GUI
-        playScreen.setResizable(true); // allows us to resize 
+        playScreen.setResizable(false); // allows us to resize 
         playScreen.setSize(500,500); //sets size of GUI
         playScreen.setVisible(true); // allows the frame to be visible
 
