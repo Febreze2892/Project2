@@ -12,7 +12,7 @@ public class playScreen {
         playScreen.setResizable(false); // allows us to resize 
         playScreen.setSize(800,600); //sets size of GUI
         playScreen.setVisible(true); // allows the frame to be visible
-
+        
         ImageIcon guiImage = new ImageIcon("sword.png"); // create an image for our GUI
         playScreen.setIconImage(guiImage.getImage()); //changes icon of our GUI
 
