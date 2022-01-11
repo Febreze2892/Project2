@@ -6,13 +6,16 @@ import javax.swing.*;
 
 public class MainScreen {
     JFrame MS;
-    JButton Store;
-    JButton Action;
-    JButton Rest;
-    JButton Inv;
-    JButton Comb;
-    JTextField Text;
-    JButton Ent;
+    JButton Store; //button that opens the store
+    JButton Action; //opens actions menu
+    JButton Rest; //rest
+    JButton Inv; //opens inventory
+    JButton Comb; //fights
+    JTextField Text; //input text
+    JButton Ent; //enter button for text field
+    JLabel Muns; //currency label
+    JLabel HP; //health label
+    JLabel SP; //stamina label
 
     MainScreen(){
 
@@ -52,7 +55,20 @@ public class MainScreen {
         Ent = new JButton(Enter);
         Ent.setBounds(570, 430, 50, 50);
         MS.add(Ent);
-    
+
+        Muns = new JLabel();
+        Muns.setBounds(20, 400, 150, 30);
+        Muns.setText("Currency Label");
+        MS.add(Muns);
+
+        HP = new JLabel("Health");
+        HP.setBounds(20, 440, 150, 30);
+        MS.add(HP);
+
+        SP = new JLabel("Stamina");
+        SP.setBounds(20, 480, 150, 30);
+        MS.add(SP);
+
     }
 
     
