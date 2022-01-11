@@ -2,7 +2,7 @@
 //purpose: main player screen
 
 import javax.swing.*;
-import java.awt.*;
+//import java.awt.*;
 
 public class MainScreen {
     JFrame MS;
@@ -12,8 +12,9 @@ public class MainScreen {
         MS.setLayout(null);
         MS.setVisible(true);
         MS.setResizable(false);
-
     }
+
+    
     // main for testing purposes
     public static void main(String[] args) {
         new MainScreen();
