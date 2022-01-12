@@ -83,6 +83,9 @@ public class playScreen {
         startButtonPanel.add(startButton);
         con.add(titleNamePanel);
         con.add(startButtonPanel);
+
+        ImageIcon sword = new ImageIcon("sword.png");
+        window.setIconImage(sword.getImage());
     }
 
 }
