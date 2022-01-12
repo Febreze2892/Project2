@@ -35,6 +35,8 @@ The fight button will generate a random enemy for the player to fight.
 
 The textbox is strictly for the choices the text-based game gives the player. The player can not execute any functions from the Actions Screen using the textbox
 
+//Lukas: Although it would be cool if it did
+
 The 3 labels will tell the player the amount of money, health, and stamina the player has. 
 
 
