@@ -48,6 +48,9 @@ public class roleScreen{
 
         titleNamePanel.add(titleNameLabel);
         con.add(titleNamePanel);
+
+        ImageIcon sword = new ImageIcon("sword.png");
+        window.setIconImage(sword.getImage());
   
 
     }
