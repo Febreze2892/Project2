@@ -1,12 +1,14 @@
+//programmer: Bailey <3
+
 class roleScreen{
     private Double hp;
     private Double stamina;
-    private Int food;
+    private int food;
     private Double currency;
-    private Int longsword;
-    private Int dagger;
-    private Int pocketKnife;
-    private String armor;
+    private int longsword;
+    private int dagger;
+    private int pocketKnife;
+    private int armor;
 
     
 
