@@ -4,11 +4,15 @@ import javax.swing.JFrame;
 
 public class Store {
     JFrame ST;
+
+
     Store(){
         ST = new JFrame();
         ST.setSize(800,600);
         ST.setLayout(null);
         ST.setVisible(true);
         ST.setResizable(false);
+
+        
     }
 }
