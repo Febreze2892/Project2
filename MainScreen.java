@@ -27,7 +27,6 @@ public class MainScreen {
         MS.setVisible(true);
         MS.setResizable(false);
 
-
         Store = new JButton("Shop");
         Store.setBounds(20, 500, 132, 50);
         MS.add(Store);
