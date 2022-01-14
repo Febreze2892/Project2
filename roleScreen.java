@@ -31,11 +31,11 @@ public class roleScreen{
     
     public roleScreen(){
         window = new JFrame();
-        window.setSize(800,600);
-        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setSize(800,600); // our resolution please keep this consistent with other screens.
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // allows you to close out of frame
         window.getContentPane().setBackground(Color.black); //literally pane of content, you set the background color of your content pane
-        window.setLayout(null);
-        window.setVisible(true);
+        window.setLayout(null); 
+        window.setVisible(true); // allows you to see the frame
         con = window.getContentPane();
 
         titleNamePanel = new JPanel();
