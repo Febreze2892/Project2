@@ -61,6 +61,7 @@ public class playScreen {
         window.getContentPane().setBackground(Color.black);
         window.setLayout(null);
         window.setVisible(true);
+        window.setResizable(false);
         con = window.getContentPane();
 
         titleNamePanel = new JPanel();
