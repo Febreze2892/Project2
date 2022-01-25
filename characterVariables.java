@@ -1,7 +1,7 @@
+//programmer: Bailey <3
+//ask if enum could be used for variables like armor protection(defense)
+
 public class characterVariables {
-
-    //private instant variables
-
     private Double health;
     private Double stamina;
     private int food;
@@ -11,7 +11,8 @@ public class characterVariables {
     private int pocketKnife;
     private int armor;
 
-    //
+
+    //constructor
 
     public characterVariables(Double hp, Double st, int f, Double c, int l, int d, int p, int a){
         health = hp; stamina = st; food = f; currency = c; longsword = l; dagger = d; pocketKnife = p; armor = a;

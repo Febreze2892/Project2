@@ -1,26 +1,4 @@
-//Programmers: Alessa
 
-// import javax.swing.*;
-// import java.awt.*;
-
-// public class playScreen {
-
-//     public static void main(String[] args) {
-//         JFrame playScreen = new JFrame(); // creates frame
-//         playScreen.setTitle("Dungeons and Dragons");// gives GUI title
-//         playScreen.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //allows us to close out of GUI
-//         playScreen.setResizable(false); // allows us to resize 
-//         playScreen.setSize(800,600); //sets size of GUI
-//         playScreen.setVisible(true); // allows the frame to be visible
-
-//         ImageIcon guiImage = new ImageIcon("sword.png"); // create an image for our GUI
-//         playScreen.setIconImage(guiImage.getImage()); //changes icon of our GUI
-
-
-//         playScreen.getContentPane().setBackground(Color.lightGray); //changes background color of GUI
-
-//Programmer: Bailey
-//ask mendoza about creating separate lines and double box
 
 import javax.swing.*;
 import java.awt.*;
@@ -35,16 +13,7 @@ public class playScreen {
     Font normalFont = new Font("Times New Roman", Font.PLAIN, 30);
     JButton startButton;
 
-    // public static void main(String[] args) {
-    //     JFrame playScreen = new JFrame(); // creates frame
-    //     playScreen.setTitle("Dungeons and Dragons");// gives GUI title
-    //     playScreen.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //allows us to close out of GUI
-    //     playScreen.setResizable(false); // allows us to resize 
-    //     playScreen.setSize(800,600); //sets size of GUI
-    //     playScreen.setVisible(true); // allows the frame to be visible
-        
-    //     ImageIcon guiImage = new ImageIcon("sword.png"); // create an image for our GUI
-    //     playScreen.setIconImage(guiImage.getImage()); //changes icon of our GUI
+   
 
 
     public static void main(String[] args){
@@ -84,6 +53,9 @@ public class playScreen {
         startButtonPanel.add(startButton);
         con.add(titleNamePanel);
         con.add(startButtonPanel);
+
+        ImageIcon sword = new ImageIcon("sword.png");
+        window.setIconImage(sword.getImage());
     }
 
 }
