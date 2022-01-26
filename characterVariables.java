@@ -10,7 +10,13 @@ public class characterVariables {
     private int dagger;
     private int pocketKnife;
     private int armor;
+    //private ArrayList<weapons> weapons; //backpack backpack
+    //private weapons mainweapon;
+    //private int inventorySlots //can't carry more than 20lbs
 
+    //   O      <-health, stamina, food, currency, 
+    //  /|\     <-weapons, armor
+    //  /\      <-boosts (potions) 
 
     //constructor
 
@@ -53,6 +59,27 @@ public class characterVariables {
     public void setArmor(int arm){armor = arm;}
     
     //behaviors
+    //do damage; chance to miss
+        //take damage
+            //how much damage with/without armor
+            //how much damage with/without potions
+        //give damage
+            //how much damage depending on weapons
+            //how much damage depending on boosts
 
+    //picking weapon
+        //setting one weapon as the main weapon
+        //this allows the character to change a weapon depending on the "boss"
+    
+    //fallInLove()
+        //allows the character to do random actions that may or may not help them
+    
+    //dieOfStarvation()
+        //if hunger is to high, character must die
+    
+    //dieOfPoverty()
+        //if the character has no money, the dragons should eat the player for not being able to pay taxes
 
+    //dieOfOverweight()
+        //if they have too many things in inventory they DIE
 }
