@@ -1,5 +1,4 @@
-//programmer: yours truly, bailey 
-
+//programmer: yours truly, bailey
 import javax.swing.*;
 import java.awt.*;
 
