@@ -14,8 +14,8 @@ public class characterVariables {
 
     //constructor
 
-    public characterVariables(Double hp, Double st, int f, Double c, int l, int d, int p, int a){
-        health = hp; stamina = st; food = f; currency = c; longsword = l; dagger = d; pocketKnife = p; armor = a;
+    public characterVariables(Double hpt, Double std, int fuk, Double cun, int lon, int dik, int pen, int arm){
+        health = hpt; stamina = std; food = fuk; currency = cun; longsword = lon; dagger = dik; pocketKnife = pen; armor = arm;
     }
 
     //get methods
@@ -36,21 +36,21 @@ public class characterVariables {
     public int getArmor(){return armor;}
 
     //set methods
-    public void setHealth(Double hp){health = hp;}
+    public void setHealth(Double hpt){health = hpt;}
 
-    public void setStamina(Double st){stamina = st;}
+    public void setStamina(Double std){stamina = std;}
 
-    public void setFood(int f){food = f;}
+    public void setFood(int fuk){food = fuk;}
 
-    public void setCurrency(Double c){currency = c;}
+    public void setCurrency(Double cun){currency = cun;}
 
-    public void setLongsword(int l){longsword = l;}
+    public void setLongsword(int lon){longsword = lon;}
 
-    public void setDagger(int d){dagger = d;}
+    public void setDagger(int dik){dagger = dik;}
 
-    public void setPocketKnife(int p){pocketKnife = p;}
+    public void setPocketKnife(int pen){pocketKnife = pen;}
 
-    public void setArmor(int a){armor = a;}
+    public void setArmor(int arm){armor = arm;}
     
     //behaviors
 
