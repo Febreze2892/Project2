@@ -1,5 +1,10 @@
 //programmer: Bailey <3
 //ask if enum could be used for variables like armor protection(defense)
+import java.util.*;
+import javax.swing.*;
+import java.awt.*;
+
+
 
 public class characterVariables {
     private Double health;
@@ -10,9 +15,9 @@ public class characterVariables {
     private int dagger;
     private int pocketKnife;
     private int armor;
-    //private ArrayList<weapons> weapons; //backpack backpack
+    private ArrayList<String> weapons; //private ArrayList<weapons> weapons; //backpack backpack
     //private weapons mainweapon;
-    //private int inventorySlots //can't carry more than 20lbs
+    private int inventorySlots; //private int inventorySlots //can't carry more than 20lbs
 
     //   O      <-health, stamina, food, currency, 
     //  /|\     <-weapons, armor
@@ -60,6 +65,10 @@ public class characterVariables {
     
     //behaviors
     //do damage; chance to miss
+    public Double doDam(){
+        Random ran = new Random();
+
+    }
         //take damage
             //how much damage with/without armor
             //how much damage with/without potions
