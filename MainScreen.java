@@ -16,12 +16,9 @@ public class MainScreen {
     JLabel Muns; //currency label
     JLabel HP; //health label
     JLabel SP; //stamina label
-<<<<<<< Updated upstream
     Container con; //component that can contain other AWT components. it has many layers, with content pane being the one that holds the objects
 
-=======
     int munsey = 0;
->>>>>>> Stashed changes
     MainScreen(){
         MS = new JFrame(); 
         Icon Enter = new ImageIcon("enter.png");
@@ -31,15 +28,12 @@ public class MainScreen {
         MS.setLayout(null);
         MS.setVisible(true);
         MS.setResizable(false);
-<<<<<<< Updated upstream
         MS.getContentPane().setBackground(Color.black); //with this line, you are modifying an object with a method. according to the rule that concerns modifying objects
         //with methods, the object will always be to the left side of the period, while your method will always be found on the right. in this case, our object is getContenPane, 
         //which retrieves the content pane so that you may add objects to it. setBackground would be our method; although technically we are not adding an object, we are
         //modifying the color of the pane itself.
         con = MS.getContentPane();
-=======
         
->>>>>>> Stashed changes
 
         Store = new JButton("Shop");
         Store.setBounds(20, 500, 132, 50);
