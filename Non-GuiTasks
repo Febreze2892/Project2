@@ -9,14 +9,14 @@ Role Screen:
 This screen will have 3 buttons
 	-Barbarian
 		-200 health, 150 stamina
-		-starts with a long sword, a dagger, 25 food, 250 currency, iron armor, 5 health potions, 20 damage potions 
+		-starts with a long sword, a dagger, 25 bread, 250 currency, iron armor, 5 health potions, 20 damage potions 
 	-Mage 
 		-200 health, 200 stamina
-		-starts with 10 health potions, 10 damage potions, a dagger, 15 food, 300 currency, leather armor
+		-starts with 10 health potions, 10 damage potions, a dagger, 15 bread, 300 currency, leather armor
 		
 	-Thief
 		-200 health, 200 stamina
-		-starts with 1 health potion, a dagger, 15 food, 300 currency, leather armor
+		-starts with 1 health potion, a dagger, 15 bread, 300 currency, leather armor
 
 Once one of these buttons are clicked, the player will be given role attributes and taken to the main screen. 
 
@@ -34,6 +34,8 @@ The actions button will allow the player to see if there are any other options t
 The fight button will generate a random enemy for the player to fight.
 
 The textbox is strictly for the choices the text-based game gives the player. The player can not execute any functions from the Actions Screen using the textbox
+
+//Lukas: Although it would be cool if it did
 
 The 3 labels will tell the player the amount of money, health, and stamina the player has. 
 
