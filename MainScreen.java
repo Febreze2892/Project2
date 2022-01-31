@@ -19,6 +19,20 @@ public class MainScreen {
     Container con; //component that can contain other AWT components. it has many layers, with content pane being the one that holds the objects
 
     int munsey = 0;
+    private static int munsey = 0;
+    
+    public void setMunsey(int x){
+        munsey = x;
+    }
+    public static void add2Munsey(int x){
+        munsey += x;
+    }
+
+    public int getMunser(){
+        return munsey;
+    }
+
+
     MainScreen(){
         MS = new JFrame(); 
         Icon Enter = new ImageIcon("enter.png");
