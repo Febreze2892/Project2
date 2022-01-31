@@ -11,23 +11,21 @@ public class characterVariables {
     private Double stamina;
     private int food;
     private Double currency;
-    private int longsword;
-    private int dagger;
-    private int pocketKnife;
     private int armor;
-    private ArrayList<String> weapons; //private ArrayList<weapons> weapons; //backpack backpack
-    //private weapons mainweapon;
     private int inventorySlots; //private int inventorySlots //can't carry more than 20lbs
+    private ArrayList<weapons> weaponsInv; //backpack backpack
+    //private weapons mainweapon;
 
     //   O      <-health, stamina, food, currency, 
     //  /|\     <-weapons, armor
     //  /\      <-boosts (potions) 
-
+    
     //constructor
 
-    public characterVariables(Double hpt, Double std, int fuk, Double cun, int lon, int dik, int pen, int arm){
-        health = hpt; stamina = std; food = fuk; currency = cun; longsword = lon; dagger = dik; pocketKnife = pen; armor = arm;
+    public characterVariables(Double hpt, Double std, int fuk, Double cun, int lon, int dik, int pen, int arm, int invs){
+        health = hpt; stamina = std; food = fuk; currency = cun; armor = arm; inventorySlots = invs;
     }
+    // longsword = lon; dagger = dik; pocketKnife = pen;
 
     //get methods
     public Double getHealth(){return health;}
@@ -38,13 +36,9 @@ public class characterVariables {
 
     public Double getCurrency(){return currency;}
 
-    public int getLongsword(){return longsword;}
-
-    public int getDagger(){return dagger;}
-
-    public int getPocketKnife(){return pocketKnife;}
-    
     public int getArmor(){return armor;}
+
+    public int getInventorySlots(){return inventorySlots;}
 
     //set methods
     public void setHealth(Double hpt){health = hpt;}
@@ -55,18 +49,18 @@ public class characterVariables {
 
     public void setCurrency(Double cun){currency = cun;}
 
-    public void setLongsword(int lon){longsword = lon;}
-
-    public void setDagger(int dik){dagger = dik;}
-
-    public void setPocketKnife(int pen){pocketKnife = pen;}
-
     public void setArmor(int arm){armor = arm;}
+
+    public void setInventorySlots(int invs){inventorySlots = invs;}
     
     //behaviors
     //do damage; chance to miss
     public Double doDam(){
+        double damagedelt=0;
+        
         Random ran = new Random();
+
+        return damagedelt;
 
     }
         //take damage
@@ -91,4 +85,11 @@ public class characterVariables {
 
     //dieOfOverweight()
         //if they have too many things in inventory they DIE
-}
+    public void addWeapon(weapons w){
+        weaponsInv.add(w);
+        //addWeapon(lpngsword)
+        //weapons longsword = new weapon(3297083641927qw094)
+    }
+
+
+    }
