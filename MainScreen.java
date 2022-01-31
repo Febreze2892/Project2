@@ -18,6 +18,7 @@ public class MainScreen {
     JLabel SP; //stamina label
     Container con; //component that can contain other AWT components. it has many layers, with content pane being the one that holds the objects
 
+    int munsey = 0;
     MainScreen(){
         MS = new JFrame(); 
         Icon Enter = new ImageIcon("enter.png");
@@ -32,6 +33,7 @@ public class MainScreen {
         //which retrieves the content pane so that you may add objects to it. setBackground would be our method; although technically we are not adding an object, we are
         //modifying the color of the pane itself.
         con = MS.getContentPane();
+        
 
         Store = new JButton("Shop");
         Store.setBounds(20, 500, 132, 50);
@@ -61,9 +63,10 @@ public class MainScreen {
         Ent.setBounds(570, 430, 50, 50);
         MS.add(Ent);
 
+
         Muns = new JLabel();
         Muns.setBounds(20, 400, 150, 30);
-        Muns.setText("Currency Label");
+        Muns.setText(String.valueOf(munsey));
         MS.add(Muns);
 
         HP = new JLabel("Health");
@@ -73,6 +76,7 @@ public class MainScreen {
         SP = new JLabel("Stamina");
         SP.setBounds(20, 480, 150, 30);
         MS.add(SP);
+        
 
     }
 
