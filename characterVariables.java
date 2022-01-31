@@ -1,8 +1,9 @@
-//programmer: Bailey <3
+//programmer: Bailey <3 (lukas added array)
 //ask if enum could be used for variables like armor protection(defense)
 import java.util.*;
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 
 
 
@@ -91,5 +92,8 @@ public class characterVariables {
         //weapons longsword = new weapon(3297083641927qw094)
     }
 
-
+ArrayList<String> weapons = new ArrayList<String>();
+weapons.add("longsword");
+weapons.add("daggers");
+weapons.add("pocket knife");
     }
