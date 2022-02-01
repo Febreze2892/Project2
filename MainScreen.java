@@ -2,7 +2,7 @@
 //purpose: main player screen
 
 import javax.swing.*;
-//import java.awt.*;
+import java.awt.*;
 
 public class MainScreen {
     JFrame MS;
@@ -16,9 +16,24 @@ public class MainScreen {
     JLabel Muns; //currency label
     JLabel HP; //health label
     JLabel SP; //stamina label
+    Container con; //component that can contain other AWT components. it has many layers, with content pane being the one that holds the objects
+
+    private static int munsey = 0;
+    
+    public void setMunsey(int x){
+        munsey = x;
+    }
+    public static void add2Munsey(int x){
+        munsey += x;
+    }
+
+    public int getMunser(){
+        return munsey;
+    }
+
 
     MainScreen(){
-
+        MS = new JFrame(); 
         Icon Enter = new ImageIcon("enter.png");
 
         MS = new JFrame();
@@ -26,6 +41,12 @@ public class MainScreen {
         MS.setLayout(null);
         MS.setVisible(true);
         MS.setResizable(false);
+        MS.getContentPane().setBackground(Color.black); //with this line, you are modifying an object with a method. according to the rule that concerns modifying objects
+        //with methods, the object will always be to the left side of the period, while your method will always be found on the right. in this case, our object is getContenPane, 
+        //which retrieves the content pane so that you may add objects to it. setBackground would be our method; although technically we are not adding an object, we are
+        //modifying the color of the pane itself.
+        con = MS.getContentPane();
+        
 
         Store = new JButton("Shop");
         Store.setBounds(20, 500, 132, 50);
@@ -55,9 +76,10 @@ public class MainScreen {
         Ent.setBounds(570, 430, 50, 50);
         MS.add(Ent);
 
+
         Muns = new JLabel();
         Muns.setBounds(20, 400, 150, 30);
-        Muns.setText("Currency Label");
+        Muns.setText(String.valueOf(munsey));
         MS.add(Muns);
 
         HP = new JLabel("Health");
@@ -67,6 +89,7 @@ public class MainScreen {
         SP = new JLabel("Stamina");
         SP.setBounds(20, 480, 150, 30);
         MS.add(SP);
+        
 
         
 

@@ -1,11 +1,10 @@
-//programmer: yours truly, bailey 
-
+//programmer: yours truly, bailey
 import javax.swing.*;
 import java.awt.*;
 
 public class roleScreen{
     JFrame window;
-    Container con; //cSomponent that can contain other AWT components. it has many layers, with content pane being the one that holds the objects
+    Container con; //component that can contain other AWT components. it has many layers, with content pane being the one that holds the objects
     JPanel titleNamePanel, startButtonPanel; //see, i have two seperate panels so thats why i named them differently
     JLabel titleNameLabel;
     Font titleFont = new Font("Times New Roman", Font.PLAIN, 40); //custom font yeahh poggers
