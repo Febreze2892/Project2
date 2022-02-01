@@ -25,7 +25,7 @@ public class RoleScreenGUI  {
         JPanel Bpanel = new JPanel();
         JButton Barbbutton = new JButton("Choose Barbarian");
         
-
+        
         Barblabel.setSize(200,100);
         
         Barbbutton.setSize(200,200);
@@ -128,7 +128,7 @@ public class RoleScreenGUI  {
 
         JFrame characterSelect  = new JFrame();
 
-        
+        characterSelect.setSize(800, 600);
         characterSelect.setTitle("Select Your Role");
         characterSelect.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         characterSelect.setVisible(true);
