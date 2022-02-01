@@ -80,6 +80,8 @@ public class RoleScreenGUI  {
         
         
 
+
+
         Barblabel.setSize(200,100);
         
         Barbbutton.setSize(200,200);
@@ -131,9 +133,9 @@ public class RoleScreenGUI  {
         Mpanel.setBorder(MageBorder);
         Magelabel.setFont(new FontUIResource("Times New Roman", Font.BOLD, 30));
         Magebutton.setFont(new FontUIResource("Times New Roman", Font.BOLD, 58));
-        //end of Mage  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         
-        // start of Rouge   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+        
         JPanel Rougpanel = new JPanel();
         JLabel Rouglabel= new JLabel("Rogue");
         JPanel Rpanel = new JPanel();
@@ -182,7 +184,7 @@ public class RoleScreenGUI  {
 
         JFrame characterSelect  = new JFrame();
 
-        
+        characterSelect.setSize(800, 600);
         characterSelect.setTitle("Select Your Role");
         characterSelect.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         characterSelect.setVisible(true);

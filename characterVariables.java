@@ -60,6 +60,8 @@ public class characterVariables {
         double damagedelt=0;
         
         Random ran = new Random();
+        //if ran % 3 != 0:
+            //daamagedealt =mainweapon.getdamage+bonuspotions.boostdamage+base_character_damage;
 
         return damagedelt;
 
@@ -92,8 +94,8 @@ public class characterVariables {
         //weapons longsword = new weapon(3297083641927qw094)
     }
 
-ArrayList<String> weapons = new ArrayList<String>();
-weapons.add("longsword");
-weapons.add("daggers");
-weapons.add("pocket knife");
-    }
+    ArrayList<String> weapons = new ArrayList<String>();
+    weapons.add("longsword");
+    weapons.add("daggers");
+    weapons.add("pocket knife");
+}
