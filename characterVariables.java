@@ -14,7 +14,9 @@ public class characterVariables {
     private Double currency;
     private int armor;
     private int inventorySlots; //private int inventorySlots //can't carry more than 20lbs
-    private ArrayList<weapons> weaponsInv; //backpack backpack
+    ArrayList<String> foods = newArrayList<String>();
+        foods.add("")
+    //private ArrayList<weapons> weaponsInv; //backpack backpack
     //private weapons mainweapon;
 
     //   O      <-health, stamina, food, currency, 
