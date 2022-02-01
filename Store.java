@@ -10,13 +10,12 @@ public class Store extends MainScreen{
 
     Store(){
 
-        
         ST = new JFrame();
         ST.setSize(800,600);
         ST.setLayout(null);
         ST.setVisible(true);
         ST.setResizable(false);
-        ///////////food//////////////////food///////////////////////food/////////////////////food/////////////////////food/////////////food//////////////////
+        
         JButton BuyPiclke = new JButton();
         BuyPiclke.addActionListener(new ActionListener(){
             @Override
