@@ -68,6 +68,8 @@ public class MainScreen {
         SP.setBounds(20, 480, 150, 30);
         MS.add(SP);
 
+        
+
     }
 
     
