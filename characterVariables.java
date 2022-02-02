@@ -15,6 +15,8 @@ public class characterVariables {
     private int armor;
     private int inventorySlots; //private int inventorySlots //can't carry more than 20lbs
     private ArrayList<weapons> weaponsInv; //backpack backpack
+    private weapons currentEquip;
+    private ArrayList<item> inventory;
     //private weapons mainweapon;
 
     //   O      <-health, stamina, food, currency, 
@@ -56,17 +58,34 @@ public class characterVariables {
     
     //behaviors
     //do damage; chance to miss
-    public Double doDam(){
-        double damagedelt=0;
-        
+    public int doDam(){
         Random ran = new Random();
-        //if ran % 3 != 0:
-            //daamagedealt =mainweapon.getdamage+bonuspotions.boostdamage+base_character_damage;
-
-        return damagedelt;
+        int temp = ran.nextInt(3);
+        if (temp % 3 != 0)
+            return 1; 
+        //daamagedealt =mainweapon.getdamage+bonuspotions.boostdamage+base_character_damage;
+        return 0;
 
     }
-        //take damage
+
+    public void add2Inv(item i){
+        inventory.add(i);
+        //if (currentEquip == null){
+        //    currentEquip = i;
+        //}
+        //if(i.getClass() == //weapon){
+        //    weaponsInv.add(i);
+        //}
+    }
+
+    public int getDamage(){
+        int equipDamage = currentEquip.getDamage();
+        int baseDamage = 1;
+
+        return (baseDamage + equipDamage)*doDam();
+        
+    }
+        //take damage 
             //how much damage with/without armor
             //how much damage with/without potions
         //give damage
@@ -88,14 +107,19 @@ public class characterVariables {
 
     //dieOfOverweight()
         //if they have too many things in inventory they DIE
+        //if there are no inventory slots then they can't add more items to their inventory so they can't "die"
     public void addWeapon(weapons w){
         weaponsInv.add(w);
-        //addWeapon(lpngsword)
-        //weapons longsword = new weapon(3297083641927qw094)
+
+        weapons longsword = new weapons(30, 20, 20, 25, "longsword" );
+        addWeapon(longsword);
+        
+        weapons dagger = new weapons(20, 15, 10, 10, "dagger");
+        addWeapon(dagger);
+
+        weapons pocketknife = new weapons(15, 10, 5, 5, "pocketknife");
+        addWeapon(pocketknife);
+
     }
 
-    ArrayList<String> weapons = new ArrayList<String>();
-    weapons.add("longsword");
-    weapons.add("daggers");
-    weapons.add("pocket knife");
 }
