@@ -4,27 +4,12 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 public class Store extends MainScreen{
-    JFrame ST;
+  //  JFrame ST;
     static JFrame ST;
 
 
     Store(){
 
-        
-        ST = new JFrame();
-        ST.setSize(800,600);
-        ST.setLayout(null);
-        ST.setVisible(true);
-        ST.setResizable(false);
-        ///////////food//////////////////food///////////////////////food/////////////////////food/////////////////////food/////////////food//////////////////
-        JButton BuyPiclke = new JButton();
-        BuyPiclke.addActionListener(new ActionListener(){
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                munsey-=4;
-                
-            }
-        });
             
         public static void main(String[]args){
             ST = new JFrame();
