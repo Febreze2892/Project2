@@ -5,6 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
+
 public class characterVariables {
     private Double health;
     private Double stamina;
@@ -13,23 +14,15 @@ public class characterVariables {
     private int armor;
 
     private int inventorySlots; //private int inventorySlots //can't carry more than 20lbs
-    private ArrayList<weapons> weaponsInv; //backpack backpack
+
     private weapons currentEquip;
     private ArrayList<item> inventory;
 
-    private int inventorySlots; //can't carry more than 20lbs
-    ArrayList<String> foods = new ArrayList<String>();
-        foods.add("cooked chicken");
-        foods.add("muffin");
-        foods.add("bread");
-        foods.add("cookie");
-        foods.add("pickle");
-    ArrayList<String> weapons = new ArrayList<String>();
-        weapons.add("longsword");
-        weapons.add("daggers");
-        weapons.add("pocket knife");
+    //can't carry more than 20lbs
+    private ArrayList<foods> foodInv;// = new ArrayList<String>();
+    private ArrayList<weapons> weaponInv;// = new ArrayList<String>();
     //private ArrayList<weapons> weaponsInv; //backpack backpack
->>>>>>> ae0947b79e2bf45ea7196e4572a78134a2e1cfbf
+
     //private weapons mainweapon;
 
     //   O      <-health, stamina, food, currency, 
@@ -38,8 +31,12 @@ public class characterVariables {
     
     //constructor
 
-    public characterVariables(Double hpt, Double std, int fuk, Double cun, int lon, int dik, int pen, int arm, int invs){
+    public characterVariables(Double hpt, Double std, int fuk, Double cun, int lon, int dik, int pen, int arm, int invs,String type){
         health = hpt; stamina = std; food = fuk; currency = cun; armor = arm; inventorySlots = invs;
+        foodInv = new ArrayList<foods>();
+        weaponInv = new ArrayList<weapons>();
+        inventory = new ArrayList<item>();
+        startupsetup(type); //barbarian, rogue, mage
     }
     // longsword = lon; dagger = dik; pocketKnife = pen;
 
@@ -81,8 +78,61 @@ public class characterVariables {
 
     }
 
+    public void startupsetup(String type){
+        foods cookedChicken = new foods("cooked chicken", 20, 50, 0);
+        add2Inv(cookedChicken);
+
+        foods bread = new foods("bread", 5, 20, 0);
+        add2Inv(bread);
+
+        foods cookie = new foods("cookie", 10, 30, 0);
+        add2Inv(cookie);
+
+        foods muffin = new foods("muffin", 10, 30, 0);
+        add2Inv(muffin);
+
+        foods pickle = new foods("pickle", 5, 15, 0);
+        add2Inv(pickle);
+
+        foods staminaPotion = new foods("stamina potion", 25, 0, 50);
+        add2Inv(staminaPotion);
+
+        foods healthPotion = new foods("health potion", 25, 80, 0);
+        add2Inv(healthPotion);
+
+        if(type.equals("Rogue")){
+            weapons knife = new weapons(10, 10, 10, 100, "nife");
+            add2Inv(knife);
+        }
+        else if (type.equals("barbarian")){
+            weapons longsword = new weapons(30, 20, 20, 25, "longsword" );
+            add2Inv(longsword);
+            
+            weapons dagger = new weapons(20, 15, 10, 10, "dagger");
+            add2Inv(dagger);
+    
+            weapons pocketknife = new weapons(15, 10, 5, 5, "pocketknife");
+            add2Inv(pocketknife);
+    
+            weapons damagePotion = new weapons(70, 30, 0, 1, "damage potion");
+            add2Inv(damagePotion);    
+        }
+        else if (type.equals("mage")){
+            weapons staff = new weapons(10, 10, 10, 100, "staff");
+            add2Inv(staff);
+        }
+    }
+
     public void add2Inv(item i){
         inventory.add(i);
+        if(i instanceof weapons){
+            weaponInv.add((weapons) i);
+
+        }
+        if(i instanceof foods){
+            foodInv.add((foods) i);
+        }  
+
         //if (currentEquip == null){
         //    currentEquip = i;
         //}
@@ -121,22 +171,7 @@ public class characterVariables {
     //dieOfOverweight()
         //if they have too many things in inventory they DIE
         //if there are no inventory slots then they can't add more items to their inventory so they can't "die"
-    public void addWeapon(weapons w){
-        weaponsInv.add(w);
-
-        weapons longsword = new weapons(30, 20, 20, 25, "longsword" );
-        addWeapon(longsword);
-        
-        weapons dagger = new weapons(20, 15, 10, 10, "dagger");
-        addWeapon(dagger);
-
-        weapons pocketknife = new weapons(15, 10, 5, 5, "pocketknife");
-        addWeapon(pocketknife);
-
-    }
-
-<<<<<<< HEAD
-=======
     
->>>>>>> ae0947b79e2bf45ea7196e4572a78134a2e1cfbf
+
+
 }
