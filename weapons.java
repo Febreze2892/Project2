@@ -24,8 +24,8 @@ public class weapons extends item{
 
     //set methods
     public void setDamage(int dam){damage = dam;}
-
     
+
 
     public void setStaminaCost(int stc){staminaCost = stc;}
 

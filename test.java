@@ -5,7 +5,7 @@ public class test{
     public static void main(String[] args){
         
 
-
+        
 
         //gui where they pic person
         //if pick mage then:
