@@ -1,11 +1,13 @@
+
 public class test{
+    
     private characterVariables maincharacter;
 
 
     public static void main(String[] args){
-        
-
-        
+        MainScreen.main(args);
+       // playScreen.main(args);
+       // Store.main(args);
 
         //gui where they pic person
         //if pick mage then:

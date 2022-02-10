@@ -35,7 +35,7 @@ public class playScreen {
 
         titleNamePanel = new JPanel();
         titleNamePanel.setBounds(100, 100, 600, 150);
-        //titleNamePanel.setBackground(Color.black);
+        titleNamePanel.setBackground(Color.blue);
 
         titleNameLabel = new JLabel("DUNGEONS AND DRAGONS");
         titleNameLabel.setBounds(10,10,7000,7000);
@@ -48,6 +48,9 @@ public class playScreen {
         //startButtonPanel.setBackground(Color.black);
 
         startButton = new JButton("PLAY");
+        startButton.addActionListener((e) -> {
+            window.setVisible(false);
+        });
         startButton.setBackground(Color.red);
         startButton.setBounds(4,2,startButtonPanel.getWidth(),startButtonPanel.getHeight());
        // startButton.setForeground(Color.white);

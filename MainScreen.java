@@ -35,6 +35,7 @@ public class MainScreen {
     MainScreen(){
         MS = new JFrame(); 
         Icon Enter = new ImageIcon("enter.png");
+        MS.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         MS = new JFrame();
         MS.setSize(800,600);
@@ -99,5 +100,6 @@ public class MainScreen {
     // main for testing purposes
     public static void main(String[] args) {
         new MainScreen();
+        playScreen.main(args);
     }
 }
