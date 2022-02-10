@@ -27,7 +27,7 @@ public class playScreen {
         window = new JFrame();
         window.setSize(800,600);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        window.getContentPane().setBackground(Color.black);
+        //window.getContentPane().setBackground(Color.black);
         window.setLayout(null);
         window.setVisible(true);
         window.setResizable(false);
@@ -35,19 +35,23 @@ public class playScreen {
 
         titleNamePanel = new JPanel();
         titleNamePanel.setBounds(100, 100, 600, 150);
-        titleNamePanel.setBackground(Color.black);
+        //titleNamePanel.setBackground(Color.black);
+
         titleNameLabel = new JLabel("DUNGEONS AND DRAGONS");
-        titleNameLabel.setForeground(Color.white);
+        titleNameLabel.setBounds(10,10,7000,7000);
+      //  titleNameLabel.setForeground(Color.white);
+        titleNameLabel.setBackground(Color.green);
         titleNameLabel.setFont(titleFont);
 
         startButtonPanel = new JPanel();
         startButtonPanel.setBounds(300, 400, 200, 100);
-        startButtonPanel.setBackground(Color.black);
+        //startButtonPanel.setBackground(Color.black);
 
         startButton = new JButton("PLAY");
-        startButton.setBackground(Color.black);
-        startButton.setForeground(Color.white);
-        startButton.setFont(normalFont);
+        startButton.setBackground(Color.red);
+        startButton.setBounds(4,2,startButtonPanel.getWidth(),startButtonPanel.getHeight());
+       // startButton.setForeground(Color.white);
+       // startButton.setFont(normalFont);
 
         titleNamePanel.add(titleNameLabel);
         startButtonPanel.add(startButton);
