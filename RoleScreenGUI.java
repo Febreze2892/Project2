@@ -70,8 +70,8 @@ public class RoleScreenGUI  {
     
 
       public static void main(String[]args){
-        
-      
+        JFrame characterSelect  = new JFrame();
+        characterSelect.setVisible(true);
         //start of Barbarian   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         JPanel Barbpanel = new JPanel();
         JLabel Barblabel= new JLabel("Barbarian");
@@ -100,7 +100,10 @@ public class RoleScreenGUI  {
         Bpanel.setBorder(BarbBorder);
         Barblabel.setFont(new FontUIResource("Times New Roman", Font.BOLD, 30));
         Barbbutton.setFont(new FontUIResource("Times New Roman", Font.BOLD, 50));
-       
+        Barbbutton.addActionListener((e) -> {
+          characterSelect.setVisible(false);
+          MainScreen.main(null);
+        });
         //end of Barbarian
 
         //start of Mage /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -133,22 +136,20 @@ public class RoleScreenGUI  {
         Mpanel.setBorder(MageBorder);
         Magelabel.setFont(new FontUIResource("Times New Roman", Font.BOLD, 30));
         Magebutton.setFont(new FontUIResource("Times New Roman", Font.BOLD, 58));
-        
+        Magebutton.addActionListener((e) -> {
+          characterSelect.setVisible(false);
+          MainScreen.main(null);
+        });
         
         
         JPanel Rougpanel = new JPanel();
         JLabel Rouglabel= new JLabel("Rogue");
         JPanel Rpanel = new JPanel();
         JButton Rougbutton = new JButton("Choose Rogue");
-        /*Rougbutton.addActionListener(new ActionListener(){
-
-          @Override
-          public void actionPerformed(ActionEvent e) {
-
-            
-            
-          }
-      });*/
+        Rougbutton.addActionListener((e) -> {
+          characterSelect.setVisible(false);
+          MainScreen.main(null);
+        });
       Rouglabel.setSize(300,100);
       Rougbutton.setSize(400,200);
 //removes border
@@ -182,12 +183,12 @@ public class RoleScreenGUI  {
          label.setFont(f);
 
 
-        JFrame characterSelect  = new JFrame();
+        
 
         characterSelect.setSize(800, 600);
         characterSelect.setTitle("Select Your Role");
         characterSelect.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        characterSelect.setVisible(true);
+
         characterSelect.pack();
         //characterSelect.setSize(1280,720);
         characterSelect.setLayout(null);

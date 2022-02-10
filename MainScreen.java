@@ -39,6 +39,7 @@ public class MainScreen {
 
         MS = new JFrame();
         MS.setSize(800,600);
+        MS.setExtendedState(JFrame.MAXIMIZED_BOTH);
         MS.setLayout(null);
         MS.setVisible(true);
         MS.setResizable(false);

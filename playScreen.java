@@ -17,9 +17,9 @@ public class playScreen {
 
 
     public static void main(String[] args){
-        RoleScreenGUI.main(args);   
+         
         new playScreen();
-  
+         
     
     }
 
@@ -52,6 +52,7 @@ public class playScreen {
         startButton = new JButton("PLAY");
         startButton.addActionListener((e) -> {
             window.setVisible(false);
+            RoleScreenGUI.main(null); 
         });
         startButton.setBackground(Color.red);
         startButton.setBounds(4,2,startButtonPanel.getWidth(),startButtonPanel.getHeight());
