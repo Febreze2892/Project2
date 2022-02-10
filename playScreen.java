@@ -17,8 +17,9 @@ public class playScreen {
 
 
     public static void main(String[] args){
-        
+        RoleScreenGUI.main(args);   
         new playScreen();
+  
     
     }
 
@@ -32,9 +33,10 @@ public class playScreen {
         window.setVisible(true);
         window.setResizable(false);
         con = window.getContentPane();
+        window.setExtendedState(JFrame.MAXIMIZED_BOTH);
 
         titleNamePanel = new JPanel();
-        titleNamePanel.setBounds(100, 100, 600, 150);
+        titleNamePanel.setBounds(window.getWidth()/3, 100, 600, 150);
         titleNamePanel.setBackground(Color.blue);
 
         titleNameLabel = new JLabel("DUNGEONS AND DRAGONS");
@@ -44,7 +46,7 @@ public class playScreen {
         titleNameLabel.setFont(titleFont);
 
         startButtonPanel = new JPanel();
-        startButtonPanel.setBounds(300, 400, 200, 100);
+        startButtonPanel.setBounds(860, 400, 200, 100);
         //startButtonPanel.setBackground(Color.black);
 
         startButton = new JButton("PLAY");

@@ -70,7 +70,7 @@ public class RoleScreenGUI  {
     
 
       public static void main(String[]args){
-  
+        
       
         //start of Barbarian   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         JPanel Barbpanel = new JPanel();

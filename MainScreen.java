@@ -100,7 +100,8 @@ public class MainScreen {
     // main for testing purposes
     public static void main(String[] args) {
         new MainScreen();
-        playScreen.main(args);
+        
+        //playScreen.main(args);
         //playScreen seee = new playScreen();
 
     }
