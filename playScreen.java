@@ -51,7 +51,8 @@ public class playScreen {
 
         startButton = new JButton("PLAY");
         startButton.addActionListener((e) -> {
-            window.setVisible(false);
+            window.dispose();
+            //window.setVisible(false);
             RoleScreenGUI.main(null); 
         });
         startButton.setBackground(Color.red);

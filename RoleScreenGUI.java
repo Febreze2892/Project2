@@ -51,6 +51,7 @@
 
 //     }
 // }
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -78,7 +79,7 @@ public class RoleScreenGUI  {
         JPanel Bpanel = new JPanel();
         JButton Barbbutton = new JButton("Choose Barbarian");
         
-        
+        //characterVariables.startupsetup("thesseniggazcanttoppp");
 
 
 
@@ -100,8 +101,11 @@ public class RoleScreenGUI  {
         Bpanel.setBorder(BarbBorder);
         Barblabel.setFont(new FontUIResource("Times New Roman", Font.BOLD, 30));
         Barbbutton.setFont(new FontUIResource("Times New Roman", Font.BOLD, 50));
+
         Barbbutton.addActionListener((e) -> {
-          characterSelect.setVisible(false);
+          characterSelect.dispose();
+          characterVariables.startupsetup("barbarian");
+          //characterSelect.setVisible(false);
           MainScreen.main(null);
         });
         //end of Barbarian
@@ -137,7 +141,9 @@ public class RoleScreenGUI  {
         Magelabel.setFont(new FontUIResource("Times New Roman", Font.BOLD, 30));
         Magebutton.setFont(new FontUIResource("Times New Roman", Font.BOLD, 58));
         Magebutton.addActionListener((e) -> {
-          characterSelect.setVisible(false);
+          characterSelect.dispose();
+          characterVariables.startupsetup("mage");
+          //characterSelect.setVisible(false);
           MainScreen.main(null);
         });
         
@@ -147,7 +153,9 @@ public class RoleScreenGUI  {
         JPanel Rpanel = new JPanel();
         JButton Rougbutton = new JButton("Choose Rogue");
         Rougbutton.addActionListener((e) -> {
-          characterSelect.setVisible(false);
+          characterSelect.dispose();
+          characterVariables.startupsetup("Rogue");
+          //characterSelect.setVisible(false);
           MainScreen.main(null);
         });
       Rouglabel.setSize(300,100);

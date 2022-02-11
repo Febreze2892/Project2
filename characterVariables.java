@@ -16,11 +16,11 @@ public class characterVariables {
     private int inventorySlots; //private int inventorySlots //can't carry more than 20lbs
 
     private weapons currentEquip;
-    private ArrayList<item> inventory;
+    private static ArrayList<item> inventory;
 
     //can't carry more than 20lbs
-    private ArrayList<foods> foodInv;// = new ArrayList<String>();
-    private ArrayList<weapons> weaponInv;// = new ArrayList<String>();
+    private static ArrayList<foods> foodInv;// = new ArrayList<String>();
+    private static ArrayList<weapons> weaponInv;// = new ArrayList<String>();
     //private ArrayList<weapons> weaponsInv; //backpack backpack
 
     //private weapons mainweapon;
@@ -77,8 +77,8 @@ public class characterVariables {
         return 0;
 
     }
-
-    public void startupsetup(String type){
+    
+    public static void startupsetup (String type){
         foods cookedChicken = new foods("cooked chicken", 20, 50, 0);
         add2Inv(cookedChicken);
 
@@ -120,10 +120,11 @@ public class characterVariables {
         else if (type.equals("mage")){
             weapons staff = new weapons(10, 10, 10, 100, "staff");
             add2Inv(staff);
-        }
+        }     
+        
     }
-
-    public void add2Inv(item i){
+    
+    public static void add2Inv(item i){
         inventory.add(i);
         if(i instanceof weapons){
             weaponInv.add((weapons) i);
@@ -171,7 +172,7 @@ public class characterVariables {
     //dieOfOverweight()
         //if they have too many things in inventory they DIE
         //if there are no inventory slots then they can't add more items to their inventory so they can't "die"
-    
+
 
 
 }
