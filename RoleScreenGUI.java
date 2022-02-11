@@ -74,9 +74,10 @@ public class RoleScreenGUI  {
       
         //start of Barbarian   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         JPanel Barbpanel = new JPanel();
-        JLabel Barblabel= new JLabel("Barbarian");
+        JLabel Barblabel= new JLabel("<html>Barbarian<br/>-- 200 Health<br/>-- 150 Stamina<br/>-- 5 Health Potions<br/>-- 20 Damge Potions<br/>-- Longsword<br/>-- Dagger<br/>-- 25 food<br/>-- 250 Currency<br/>-- Iron Armor<html>");
         JPanel Bpanel = new JPanel();
         JButton Barbbutton = new JButton("Choose Barbarian");
+        
         
         
 
@@ -92,22 +93,27 @@ public class RoleScreenGUI  {
         Barbpanel.add(Barbbutton);
         
         Barbpanel.setBounds(350, 250, 400, 500);
-        Border BarbaBorder = BorderFactory.createMatteBorder(2, 2, 0, 1, Color.BLACK);
+        Border BarbaBorder = BorderFactory.createMatteBorder(2, 2, 0, 1, Color.WHITE);
         Barbpanel.setBorder(BarbaBorder);
         Bpanel.setBounds(350, 750, 400, 75);
         Barbbutton.setBounds(350, 750, 400, 75);
-        Border BarbBorder = BorderFactory.createMatteBorder(0, 2, 2, 1, Color.BLACK);
+        Border BarbBorder = BorderFactory.createMatteBorder(0, 2, 2, 1, Color.WHITE);
         Bpanel.setBorder(BarbBorder);
         Barblabel.setFont(new FontUIResource("Times New Roman", Font.BOLD, 30));
         Barbbutton.setFont(new FontUIResource("Times New Roman", Font.BOLD, 50));
-       
+        Barbpanel.setForeground(Color.WHITE);
+        Barbpanel.setBackground(Color.BLACK);
+        Barblabel.setForeground(Color.WHITE);
+        Barbbutton.setForeground(Color.WHITE);
+        Barbbutton.setBackground(Color.BLACK);
         //end of Barbarian
 
         //start of Mage /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         JPanel Magepanel = new JPanel();
-        JLabel Magelabel= new JLabel("Mage");
+        JLabel Magelabel= new JLabel("<html>Mage<br/>-- 200 Health<br/>-- 200 Stamina<br/>-- 10 Health Potions<br/>-- 10 Damge Potions<br/>-- Dagger<br/>-- 15 food<br/>-- 300 Currency<html>");
         JPanel Mpanel = new JPanel();
         JButton Magebutton = new JButton("Choose Mage");
+        
         /*Magebutton.addActionListener(new ActionListener(){
 
           @Override
@@ -125,19 +131,26 @@ public class RoleScreenGUI  {
         Mpanel.add(Magebutton);
 
         Magepanel.setBounds(750, 250, 375, 500);
-        Border MagaBorder = BorderFactory.createMatteBorder(2, 1, 0, 1, Color.BLACK);
+        Border MagaBorder = BorderFactory.createMatteBorder(2, 1, 0, 1, Color.WHITE);
         Magepanel.setBorder(MagaBorder);
         Mpanel.setBounds(750, 750, 375, 75);
         Magebutton.setBounds(1125, 750, 375, 75);
-        Border MageBorder = BorderFactory.createMatteBorder(0, 1, 2, 1, Color.BLACK);
+        Border MageBorder = BorderFactory.createMatteBorder(0, 1, 2, 1, Color.WHITE);
         Mpanel.setBorder(MageBorder);
         Magelabel.setFont(new FontUIResource("Times New Roman", Font.BOLD, 30));
         Magebutton.setFont(new FontUIResource("Times New Roman", Font.BOLD, 58));
+        Magepanel.setForeground(Color.WHITE);
+        Magepanel.setBackground(Color.BLACK);
+        Magelabel.setForeground(Color.WHITE);
+        Magebutton.setBackground(Color.BLACK);
+        Magebutton.setForeground(Color.WHITE);
+        //end of Mage  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
         
         
         
         JPanel Rougpanel = new JPanel();
-        JLabel Rouglabel= new JLabel("Rogue");
+        JLabel Rouglabel= new JLabel("<html>Rogue<br/>-- 100 Health<br/>-- 250 Stamina<br/>-- 1 Health Potion<br/>-- Dagger<br/>-- 35 food<br/>-- 400 Currency<br/>-- Leather Armor<html>");
         JPanel Rpanel = new JPanel();
         JButton Rougbutton = new JButton("Choose Rogue");
         /*Rougbutton.addActionListener(new ActionListener(){
@@ -157,15 +170,19 @@ public class RoleScreenGUI  {
         Rpanel.add(Rougbutton);
 
         Rougpanel.setBounds(1125, 250, 400, 500);
-        Border RougeBorder = BorderFactory.createMatteBorder(2, 1, 0, 2, Color.BLACK);
+        Border RougeBorder = BorderFactory.createMatteBorder(2, 1, 0, 2, Color.WHITE);
         Rougpanel.setBorder(RougeBorder);
         Rpanel.setBounds(1125, 750, 400, 75);
         Rougbutton.setBounds(1125, 750, 400, 75);
-        Border RougBorder = BorderFactory.createMatteBorder(0, 1, 2, 2, Color.BLACK);
+        Border RougBorder = BorderFactory.createMatteBorder(0, 1, 2, 2, Color.WHITE);
         Rpanel.setBorder(RougBorder);
         Rouglabel.setFont(new FontUIResource("Times New Roman", Font.BOLD, 30));
         Rougbutton.setFont(new FontUIResource("Times New Roman", Font.BOLD, 58));
-      
+        Rougpanel.setForeground(Color.WHITE);
+        Rougpanel.setBackground(Color.BLACK);
+        Rouglabel.setForeground(Color.WHITE);
+        Rougbutton.setForeground(Color.WHITE);
+        Rougbutton.setBackground(Color.BLACK);
           //font f = new.
 
             final FontUIResource f = new FontUIResource("Times New Roman", Font.BOLD, 38);
@@ -184,8 +201,13 @@ public class RoleScreenGUI  {
 
         JFrame characterSelect  = new JFrame();
 
+
         characterSelect.setSize(800, 600);
-        characterSelect.setTitle("Select Your Role");
+
+
+        
+        characterSelect.setTitle("Choose Your Role");
+        characterSelect.getContentPane().setBackground(Color.BLACK);;
         characterSelect.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         characterSelect.setVisible(true);
         characterSelect.pack();
@@ -203,10 +225,18 @@ public class RoleScreenGUI  {
         Barbpanel.add(Barblabel);
         Bpanel.add(Barbbutton);
         Magepanel.add(Magelabel);
+
+
         Mpanel.add(Magebutton);
         Rougpanel.add(Rouglabel);
         Rpanel.add(Rougbutton);
+        characterSelect.setBackground(Color.BLACK);
         
-      
+        characterSelect.setForeground(Color.WHITE);
+        
+        
+        label.setBackground(Color.BLACK);
+        label.setForeground(Color.WHITE);
+
     }
 }
