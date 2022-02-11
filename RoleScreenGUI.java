@@ -104,9 +104,10 @@ public class RoleScreenGUI  {
 
         Barbbutton.addActionListener((e) -> {
           characterSelect.dispose();
+          MainScreen.main(null);
           characterVariables.startupsetup("barbarian");
           //characterSelect.setVisible(false);
-          MainScreen.main(null);
+          
         });
         //end of Barbarian
 
@@ -142,9 +143,10 @@ public class RoleScreenGUI  {
         Magebutton.setFont(new FontUIResource("Times New Roman", Font.BOLD, 58));
         Magebutton.addActionListener((e) -> {
           characterSelect.dispose();
+          MainScreen.main(null);
           characterVariables.startupsetup("mage");
           //characterSelect.setVisible(false);
-          MainScreen.main(null);
+          
         });
         
         
@@ -154,9 +156,11 @@ public class RoleScreenGUI  {
         JButton Rougbutton = new JButton("Choose Rogue");
         Rougbutton.addActionListener((e) -> {
           characterSelect.dispose();
+          MainScreen.main(null);
+          
           characterVariables.startupsetup("Rogue");
           //characterSelect.setVisible(false);
-          MainScreen.main(null);
+
         });
       Rouglabel.setSize(300,100);
       Rougbutton.setSize(400,200);
