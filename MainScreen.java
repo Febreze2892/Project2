@@ -80,16 +80,16 @@ public class MainScreen {
 
 
         Muns = new JLabel();
-        Muns.setBounds(20, 400, 150, 30);
+        Muns.setBounds(20, 300, 150, 30);
         Muns.setText(String.valueOf(munsey));
         MS.add(Muns);
 
         HP = new JLabel("Health");
-        HP.setBounds(20, 440, 150, 30);
+        HP.setBounds(20, 340, 150, 30);
         MS.add(HP);
 
         SP = new JLabel("Stamina");
-        SP.setBounds(20, 480, 150, 30);
+        SP.setBounds(20, 380, 150, 30);
         MS.add(SP);
         
 
