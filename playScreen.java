@@ -37,17 +37,17 @@ public class playScreen {
 
         titleNamePanel = new JPanel();
         titleNamePanel.setBounds(window.getWidth()/3, 100, 600, 150);
-        titleNamePanel.setBackground(Color.blue);
+        titleNamePanel.setBackground(Color.black);
 
         titleNameLabel = new JLabel("DUNGEONS AND DRAGONS");
         titleNameLabel.setBounds(10,10,7000,7000);
-      //  titleNameLabel.setForeground(Color.white);
-        titleNameLabel.setBackground(Color.green);
+        titleNameLabel.setForeground(Color.white);
+        titleNameLabel.setBackground(Color.black);
         titleNameLabel.setFont(titleFont);
 
         startButtonPanel = new JPanel();
         startButtonPanel.setBounds(860, 400, 200, 100);
-        //startButtonPanel.setBackground(Color.black);
+        startButtonPanel.setBackground(Color.black);
 
         startButton = new JButton("PLAY");
         startButton.addActionListener((e) -> {
@@ -55,9 +55,9 @@ public class playScreen {
             //window.setVisible(false);
             RoleScreenGUI.main(null); 
         });
-        startButton.setBackground(Color.red);
+        startButton.setBackground(Color.black);
         startButton.setBounds(4,2,startButtonPanel.getWidth(),startButtonPanel.getHeight());
-       // startButton.setForeground(Color.white);
+        startButton.setForeground(Color.white);
        // startButton.setFont(normalFont);
 
         titleNamePanel.add(titleNameLabel);
@@ -67,6 +67,8 @@ public class playScreen {
 
         ImageIcon sword = new ImageIcon("sword.png");
         window.setIconImage(sword.getImage());
+        window.getContentPane().setBackground(Color.BLACK);
+        window.getContentPane().setForeground(Color.WHITE);
     }
 
 
