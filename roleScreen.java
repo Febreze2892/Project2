@@ -48,6 +48,6 @@ public class roleScreen{
         titleNamePanel.add(titleNameLabel); //appends titleNameLabel to titleNamePanel
         con.add(titleNamePanel); //appends titleNamePanel to con
   
-
+    
     }
 }
