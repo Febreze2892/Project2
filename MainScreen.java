@@ -43,6 +43,7 @@ public class MainScreen {
         MS.setLayout(null);
         MS.setVisible(true);
         MS.setResizable(false);
+        MS.setExtendedState(Frame.NORMAL);
         MS.getContentPane().setBackground(Color.black); //with this line, you are modifying an object with a method. according to the rule that concerns modifying objects
         //with methods, the object will always be to the left side of the period, while your method will always be found on the right. in this case, our object is getContenPane, 
         //which retrieves the content pane so that you may add objects to it. setBackground would be our method; although technically we are not adding an object, we are
@@ -81,6 +82,7 @@ public class MainScreen {
 
         Muns = new JLabel();
         Muns.setBounds(20, 300, 150, 30);
+        Muns.setText("$");
         Muns.setText(String.valueOf(munsey));
         MS.add(Muns);
 
