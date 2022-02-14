@@ -5,8 +5,8 @@ public class test{
 
 
     public static void main(String[] args){
-        MainScreen.main(args);
-       // playScreen.main(args);
+        //MainScreen.main(args);
+        playScreen.main(null);
        // Store.main(args);
 
         //gui where they pic person

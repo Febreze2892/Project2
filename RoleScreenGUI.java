@@ -51,6 +51,7 @@
 
 //     }
 // }
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -70,16 +71,15 @@ public class RoleScreenGUI  {
     
 
       public static void main(String[]args){
-  
-      
+        JFrame characterSelect  = new JFrame();
+        characterSelect.setVisible(true);
         //start of Barbarian   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         JPanel Barbpanel = new JPanel();
-        JLabel Barblabel= new JLabel("<html>Barbarian<br/>-- 200 Health<br/>-- 150 Stamina<br/>-- 5 Health Potions<br/>-- 20 Damge Potions<br/>-- Longsword<br/>-- Dagger<br/>-- 25 food<br/>-- 250 Currency<br/>-- Iron Armor<html>");
+        JLabel Barblabel= new JLabel("Barbarian");
         JPanel Bpanel = new JPanel();
         JButton Barbbutton = new JButton("Choose Barbarian");
         
-        
-        
+        //characterVariables.startupsetup("thesseniggazcanttoppp");
 
 
 
@@ -93,27 +93,29 @@ public class RoleScreenGUI  {
         Barbpanel.add(Barbbutton);
         
         Barbpanel.setBounds(350, 250, 400, 500);
-        Border BarbaBorder = BorderFactory.createMatteBorder(2, 2, 0, 1, Color.WHITE);
+        Border BarbaBorder = BorderFactory.createMatteBorder(2, 2, 0, 1, Color.BLACK);
         Barbpanel.setBorder(BarbaBorder);
         Bpanel.setBounds(350, 750, 400, 75);
         Barbbutton.setBounds(350, 750, 400, 75);
-        Border BarbBorder = BorderFactory.createMatteBorder(0, 2, 2, 1, Color.WHITE);
+        Border BarbBorder = BorderFactory.createMatteBorder(0, 2, 2, 1, Color.BLACK);
         Bpanel.setBorder(BarbBorder);
         Barblabel.setFont(new FontUIResource("Times New Roman", Font.BOLD, 30));
         Barbbutton.setFont(new FontUIResource("Times New Roman", Font.BOLD, 50));
-        Barbpanel.setForeground(Color.WHITE);
-        Barbpanel.setBackground(Color.BLACK);
-        Barblabel.setForeground(Color.WHITE);
-        Barbbutton.setForeground(Color.WHITE);
-        Barbbutton.setBackground(Color.BLACK);
+
+        Barbbutton.addActionListener((e) -> {
+          characterSelect.dispose();
+          MainScreen.main(null);
+          characterVariables.startupsetup("barbarian");
+          //characterSelect.setVisible(false);
+          
+        });
         //end of Barbarian
 
         //start of Mage /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         JPanel Magepanel = new JPanel();
-        JLabel Magelabel= new JLabel("<html>Mage<br/>-- 200 Health<br/>-- 200 Stamina<br/>-- 10 Health Potions<br/>-- 10 Damge Potions<br/>-- Dagger<br/>-- 15 food<br/>-- 300 Currency<html>");
+        JLabel Magelabel= new JLabel("Mage");
         JPanel Mpanel = new JPanel();
         JButton Magebutton = new JButton("Choose Mage");
-        
         /*Magebutton.addActionListener(new ActionListener(){
 
           @Override
@@ -131,37 +133,35 @@ public class RoleScreenGUI  {
         Mpanel.add(Magebutton);
 
         Magepanel.setBounds(750, 250, 375, 500);
-        Border MagaBorder = BorderFactory.createMatteBorder(2, 1, 0, 1, Color.WHITE);
+        Border MagaBorder = BorderFactory.createMatteBorder(2, 1, 0, 1, Color.BLACK);
         Magepanel.setBorder(MagaBorder);
         Mpanel.setBounds(750, 750, 375, 75);
         Magebutton.setBounds(1125, 750, 375, 75);
-        Border MageBorder = BorderFactory.createMatteBorder(0, 1, 2, 1, Color.WHITE);
+        Border MageBorder = BorderFactory.createMatteBorder(0, 1, 2, 1, Color.BLACK);
         Mpanel.setBorder(MageBorder);
         Magelabel.setFont(new FontUIResource("Times New Roman", Font.BOLD, 30));
         Magebutton.setFont(new FontUIResource("Times New Roman", Font.BOLD, 58));
-        Magepanel.setForeground(Color.WHITE);
-        Magepanel.setBackground(Color.BLACK);
-        Magelabel.setForeground(Color.WHITE);
-        Magebutton.setBackground(Color.BLACK);
-        Magebutton.setForeground(Color.WHITE);
-        //end of Mage  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        
+        Magebutton.addActionListener((e) -> {
+          characterSelect.dispose();
+          MainScreen.main(null);
+          characterVariables.startupsetup("mage");
+          //characterSelect.setVisible(false);
+          
+        });
         
         
         JPanel Rougpanel = new JPanel();
-        JLabel Rouglabel= new JLabel("<html>Rogue<br/>-- 100 Health<br/>-- 250 Stamina<br/>-- 1 Health Potion<br/>-- Dagger<br/>-- 35 food<br/>-- 400 Currency<br/>-- Leather Armor<html>");
+        JLabel Rouglabel= new JLabel("Rogue");
         JPanel Rpanel = new JPanel();
         JButton Rougbutton = new JButton("Choose Rogue");
-        /*Rougbutton.addActionListener(new ActionListener(){
+        Rougbutton.addActionListener((e) -> {
+          characterSelect.dispose();
+          MainScreen.main(null);
+          
+          characterVariables.startupsetup("Rogue");
+          //characterSelect.setVisible(false);
 
-          @Override
-          public void actionPerformed(ActionEvent e) {
-
-            
-            
-          }
-      });*/
+        });
       Rouglabel.setSize(300,100);
       Rougbutton.setSize(400,200);
 //removes border
@@ -170,19 +170,15 @@ public class RoleScreenGUI  {
         Rpanel.add(Rougbutton);
 
         Rougpanel.setBounds(1125, 250, 400, 500);
-        Border RougeBorder = BorderFactory.createMatteBorder(2, 1, 0, 2, Color.WHITE);
+        Border RougeBorder = BorderFactory.createMatteBorder(2, 1, 0, 2, Color.BLACK);
         Rougpanel.setBorder(RougeBorder);
         Rpanel.setBounds(1125, 750, 400, 75);
         Rougbutton.setBounds(1125, 750, 400, 75);
-        Border RougBorder = BorderFactory.createMatteBorder(0, 1, 2, 2, Color.WHITE);
+        Border RougBorder = BorderFactory.createMatteBorder(0, 1, 2, 2, Color.BLACK);
         Rpanel.setBorder(RougBorder);
         Rouglabel.setFont(new FontUIResource("Times New Roman", Font.BOLD, 30));
         Rougbutton.setFont(new FontUIResource("Times New Roman", Font.BOLD, 58));
-        Rougpanel.setForeground(Color.WHITE);
-        Rougpanel.setBackground(Color.BLACK);
-        Rouglabel.setForeground(Color.WHITE);
-        Rougbutton.setForeground(Color.WHITE);
-        Rougbutton.setBackground(Color.BLACK);
+      
           //font f = new.
 
             final FontUIResource f = new FontUIResource("Times New Roman", Font.BOLD, 38);
@@ -199,17 +195,12 @@ public class RoleScreenGUI  {
          label.setFont(f);
 
 
-        JFrame characterSelect  = new JFrame();
-
+        
 
         characterSelect.setSize(800, 600);
-
-
-        
-        characterSelect.setTitle("Choose Your Role");
-        characterSelect.getContentPane().setBackground(Color.BLACK);;
+        characterSelect.setTitle("Select Your Role");
         characterSelect.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        characterSelect.setVisible(true);
+
         characterSelect.pack();
         //characterSelect.setSize(1280,720);
         characterSelect.setLayout(null);
@@ -225,18 +216,10 @@ public class RoleScreenGUI  {
         Barbpanel.add(Barblabel);
         Bpanel.add(Barbbutton);
         Magepanel.add(Magelabel);
-
-
         Mpanel.add(Magebutton);
         Rougpanel.add(Rouglabel);
         Rpanel.add(Rougbutton);
-        characterSelect.setBackground(Color.BLACK);
         
-        characterSelect.setForeground(Color.WHITE);
-        
-        
-        label.setBackground(Color.BLACK);
-        label.setForeground(Color.WHITE);
-
+      
     }
 }
