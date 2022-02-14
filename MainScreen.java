@@ -82,8 +82,7 @@ public class MainScreen {
 
         Muns = new JLabel();
         Muns.setBounds(20, 300, 150, 30);
-        Muns.setText("$");
-        Muns.setText(String.valueOf(munsey));
+        Muns.setText("$" + String.valueOf(munsey));
         MS.add(Muns);
 
         HP = new JLabel("Health");
