@@ -25,12 +25,16 @@ public class GameWonScreen {
         EPanel3.setLayout(grid);
         JLabel Etitle = new JLabel("(You Win!!!)");
         Etitle.setFont(new Font("Impact", Font.PLAIN, 20));
-        JButton EButton4 = new JButton("Continue");
-        JButton EButton3 = new JButton("Inventory");
+        JButton EButton4 = new JButton("Inventory");
+        JButton EButton3 = new JButton("Continue");
         Etitle.setFont(new Font("Impact", Font.PLAIN, 20));
         JButton EButton5 = new JButton("Retry");
-        //JButton EButton6 = new JButton("Back");
+        
 
+        JButton EButton6 = new JButton("Back");
+        EButton6.addActionListener((e) ->{
+                   // Go Back
+                } );
 
 
 
