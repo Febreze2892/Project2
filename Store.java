@@ -1,3 +1,4 @@
+import java.awt.Frame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -14,6 +15,7 @@ public class Store extends MainScreen{
         ST.setLayout(null);
         ST.setVisible(true);
         ST.setResizable(false);
+        ST.setExtendedState(Frame.NORMAL);
         ///////////food//////////////////food///////////////////////food/////////////////////food/////////////////////food/////////////food//////////////////
         JButton BuyPiclke = new JButton();
         BuyPiclke.addActionListener(new ActionListener(){

@@ -6,7 +6,7 @@ public class foods extends item{
         super(name, cost);
         heals = heals;
         givestamina = givestamina;
-        //TODO Auto-generated con   structor stub
+        //TODO Auto-generated con structor stub
     }
 
     public int getHeals(){return heals;}
